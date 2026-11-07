@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="목동성당·신정동성당 월별 성가표, 원본 다운로드와 가톨릭 성가 유튜브 검색"><title>성가노트 · 월별 성가표</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/">♫ <span>성가노트<small>MONTHLY HYMN NOTE</small></span></a><a class="admin" href="https://github.com/azolazol/parish-hymns" target="_blank" rel="noopener noreferrer">관리자 자료 관리 ↗</a></header>
+<main>
+<nav aria-label="성당 선택"><button data-parish="mokdong">목동성당</button><button data-parish="shinjeong">신정동성당</button></nav>
+<div class="heading"><div><p id="parish-label" class="eyebrow">월별 성가표</p><h1 id="title">성가표 불러오는 중…</h1></div><div class="month-controls"><button id="prev" aria-label="이전 달">‹</button><select id="month" aria-label="연월 선택"></select><button id="next" aria-label="다음 달">›</button></div></div>
+<p id="error" role="alert" hidden></p>
+<div class="summary"><span id="stats"></span><button id="source">▧ 원본 성가표</button><a id="download">↓ 성가표 다운로드</a></div>
+<div class="workspace"><section class="calendar-panel"><div class="panel-title"><h2>월간 성가 일정</h2><div class="segmented"><button id="calendar-view" aria-pressed="true">달력</button><button id="list-view" aria-pressed="false">목록</button></div></div><div id="schedule"></div><div id="special"></div><p class="hint">날짜를 선택하면 미사 순서에 맞는 성가를 볼 수 있습니다.</p></section><aside id="detail" aria-live="polite"></aside></div>
+<footer><span id="footer-name">성가노트</span><span>성가표 원문 기준 · 월별 자료 보관</span><div id="counter" hidden></div></footer>
+</main>
+<dialog id="source-modal"><div class="modal-heading"><h2>원본 성가표</h2><button id="close-source" aria-label="닫기">×</button></div><a id="modal-download">↓ 원본 다운로드</a><img id="source-image" alt="성가표 원본"></dialog>
+</body></html>
